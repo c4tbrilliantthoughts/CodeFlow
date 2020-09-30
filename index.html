@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>CodeFlow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./flow/svgStyle.css">
+        <link rel="stylesheet" href="./flow/codeStyle.css">
+        <link rel="stylesheet" href="style.css">
+
+
+        <script src="./flow/mainjs1.js"></script>
+        <script src="./flow/mainjs2.js"></script>
+        <script src="./flow/mainjs3.js"></script>
+        <script src="./flow/mainjs4.js"></script>
+
+    </head>
+        
+    <body>
+    <div class="header">
+            <h1 class="title" title="Code Flow">CodeFlow</h1>
+            <h3><a target="_blank" href="">Report Issue</a></h3>
+            <button id="downloadFile">></button>
+    </div>
+        <div class="container">
+            <div class="column">
+            <textarea id="codeEditor">
+                /**
+                * Binary search
+                * @param {Array} list
+                * @param {Number} element
+                * @returns {number}
+                */
+                function indexSearch(list, element) {
+                    let currentIndex,
+                        currentElement,
+                        minIndex = 0,
+                        maxIndex = list.length - 1;
+
+                    while (minIndex <= maxIndex) {
+                        currentIndex = Math.floor((maxIndex + maxIndex) / 2);
+                        currentElement = list[currentIndex];
+
+                        if (currentElement === element) {
+                            return currentIndex;
+                        }
+
+                        if (currentElement < element) {
+                            minIndex = currentIndex + 1;
+                        }
+
+                        if (currentElement > element) {
+                            maxIndex = currentIndex - 1;
+                        }
+                    }
+
+                    return -1;
+                }
+            </textarea>
+        </div>
+
+        <div class="column">
+            <p id="svgImage"></p>
+        </div>
+        
+       
+        <script src="./index.js"></script>
+    </body>
+        <footer class="footer">© 2020 TechSmartInnovations</footer>
+</html>
