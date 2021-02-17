@@ -1,27 +1,30 @@
 {
-  "name": "js2flowchart",
-  "version": "1.3.2",
-  "author": "Bohdan Liashenko",
+  "name": "CodeFlow",
+  "version": "1.0.0",
+  "author": "SmartTechInno",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart.git"
+    "url": "https://github.com/SmartTechInno/CodeFlow.git"
   },
-  "main": "dist/js2flowchart.js",
+  "main": "chart-svg/js2flowchart.js",
   "scripts": {
-    "dev": "webpack --progress --colors --watch --env dev",
-    "build": "NODE_ENV=production webpack --progress",
-    "babel-compile": "babel src -d build --copy-files",
+    "dev": "parcel ./dist/index.html" ,
+    "build": "parcel build ./flow/index.html",
+	"serve": "npm ./flow/index.html"
   },
   "bin": {
     "js2flowchart": "./cli/index.cli.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
     "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.0",
+    "nodemon": "^2.0.5",
+    "parcel-bundler": "^1.12.4",
     "prettier": "1.9.2",
+    "serve": "^11.3.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },

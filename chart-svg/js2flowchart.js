@@ -24699,16 +24699,16 @@
 			}) : e[t] = n, e
 		}
 		var Oe = {
-				strokeColor: "#444",
+				strokeColor: "#3C4E67",
 				defaultFillColor: "#fff",
-				textColor: "#222",
+				textColor: "#0D1431",
 				arrowFillColor: "#333",
-				rectangleFillColor: "#90caf9",
+				rectangleFillColor: "#fee196",
 				rectangleDotFillColor: "#ede7f6",
-				functionFillColor: "#a5d6a7",
-				rootCircleFillColor: "#fff59d",
-				loopFillColor: "#b39ddb",
-				conditionFillColor: "#ce93d8",
+				functionFillColor: "#f9c3d8",
+				rootCircleFillColor: "#b8fb9d",
+				loopFillColor: "#96feea",
+				conditionFillColor: "#fea996",
 				destructedNodeFillColor: "#ffcc80",
 				classFillColor: "#80cbc4",
 				debuggerFillColor: "#EF5350",
@@ -24722,11 +24722,11 @@
 			we = function (e) {
 				var t = {
 					strokeColor: e.strokeColor,
-					strokeWidth: 1,
+					strokeWidth: 2,
 					fillColor: e.defaultFillColor,
 					textColor: e.textColor,
 					fontFamily: "monospace",
-					fontSize: 13,
+					fontSize: 14,
 					lineHeight: 5,
 					symbolHeight: 10,
 					symbolWidth: 7.8,
@@ -24734,7 +24734,7 @@
 					verticalPadding: 10,
 					childOffset: 37,
 					margin: 10,
-					roundBorder: 2,
+					roundBorder: 5,
 					complexTypeExtraSpace: 15,
 					debugFontSize: 8,
 					debugTextColor: e.debugModeFillColor
@@ -24751,7 +24751,7 @@
 						},
 						line: {
 							strokeColor: e.strokeColor,
-							strokeWidth: 1,
+							strokeWidth: 2,
 							curveTurnRadius: 4
 						},
 						lineTurnOffset: 20
